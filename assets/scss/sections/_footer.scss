@@ -1,0 +1,67 @@
+.footer {
+    padding: 80px 0;
+    background: $black-3;
+    .footer-txt {
+        text-align: center;
+        .logo {
+            margin-bottom: 50px;
+            img {
+                width: 130px;
+            }
+        }
+        .social {
+            margin-bottom: 50px;
+            a {
+                text-align: center;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                font-size: 15px;
+                color: rgba($white, 0.7);
+                border-radius: 50%;
+                margin-right: 7px;
+                box-shadow: 2px 2px 3px rgba($black-1, 0.9), inset 0px 0px 0px rgba($white, 0.15), -2px -2px 3px rgba($white, 0.15), inset 0px 0px 0px rgba($black-1, 0.9);
+                &:hover {
+                    color: $color-1;
+                    box-shadow: 0px 0px 0px rgba($black-1, 0.9), inset -2px -2px 3px rgba($white, 0.15), 0px 0px 0px rgba($white, 0.15), inset 2px 2px 3px rgba($black-1, 0.9);
+                }
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 100%;
+            font-weight: 300;
+            text-transform: capitalize;
+            color: rgba($white, 0.6);
+            margin-bottom: 0;
+            a {
+                color: $color-2;
+                font-weight: 400;
+            }
+        }
+    }
+    /* footer for home page two(2) */
+    &.footer-2 {
+        background: $sky-2;
+        .footer-txt {
+            .social {
+                a {
+                    color: $black-2;
+                    box-shadow: 3px 3px 5px rgba($black-1, 0.3), inset 0px 0px 0px rgba($white, 0.9), -3px -3px 5px rgba($white, 0.9), inset 0px 0px 0px rgba($black-1, 0.3);
+                    &:hover {
+                        color: $color-3;
+                        box-shadow: 0px 0px 0px rgba($black-1, 0.3), inset -3px -3px 5px rgba($white, 0.9), 0px 0px 0px rgba($white, 0.9), inset 3px 3px 5px rgba($black-1, 0.3);
+                    }
+                }
+            }
+            p {
+                color: rgba($black-1, 0.7);
+                font-weight: 400;
+                a {
+                    color: $color-3;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.skill {
+    padding: 120px 0;
+    background: $black-2;
+    .part-txt {
+        .title {
+            p {
+                font-size: 16px;
+                line-height: 100%;
+                font-weight: 300;
+                text-transform: uppercase;
+                color: $color-1;
+                margin-top: -2px;
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-size: 40px;
+                line-height: 50px;
+                font-weight: 500;
+                text-transform: capitalize;
+                color: $white;
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 26px;
+            margin-bottom: 15px;
+            color: rgba($white, 0.8);
+        }
+        h6 {
+            font-size: 16px;
+            line-height: 100%;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: rgba($white, 0.8);
+            margin-top: 25px;
+            margin-bottom: 10px;
+            span {
+                float: right;
+                color: $color-1;
+            }
+        }
+        .progress {
+            background: transparent;
+            height: 10px;
+            border-radius: 2px;
+            box-shadow: 2px 2px 10px rgba($black-1, 0.5), inset 2px 2px 10px rgba($black-1, 0.7), -2px -2px 10px rgba($white, 0.1), inset -2px -2px 10px rgba($white, 0.1);
+            .progress-bar {
+                background: $color-1;
+                border-radius: 2px;
+                box-shadow: inset 3px 3px 15px $color-2, inset -3px -3px 15px $black-2;
+            }
+        }
+    }
+    .counter {
+        margin-bottom: -40px;
+        .counter-txt {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba($black-1, 0.9), -3px -3px 10px rgba($white, 0.1);
+            h2 {
+                display: block;
+                font-size: 45px;
+                line-height: 100%;
+                font-weight: 500;
+                color: $color-2;
+                padding-top: 26px;
+                padding-bottom: 20px;
+                border-radius: 5px;
+                margin-bottom: 0;
+                box-shadow: inset 3px 3px 10px rgba($black-1, 0.9), inset -3px -3px 10px rgba($white, 0.1);
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 100%;
+                text-transform: capitalize;
+                color: rgba($white, 0.8);
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    /* skill for home page two(2) */
+    &.skill-2 {
+        background: $sky-1;
+        .part-txt {
+            .title {
+                p {
+                    font-weight: 400;
+                    color: $black-2;
+                }
+                h2 {
+                    font-weight: 600;
+                    color: $color-3;
+                }
+            }
+            p {
+                font-weight: 400;
+                color: rgba($black-1, 0.7);
+            }
+            h6 {
+                font-weight: 500;
+                color: $black-2;
+                span {
+                    color: $color-3;
+                }
+            }
+            .progress {
+                box-shadow: 3px 3px 5px rgba($black-1, 0.3), inset 3px 3px 5px rgba($black-1, 0.3), -3px -3px 5px rgba($white, 0.95), inset -3px -3px 5px rgba($white, 0.95);
+                .progress-bar {
+                    background: $color-3;
+                    box-shadow: 0px 0px;
+                }
+            }
+        }
+        .counter {
+            .counter-txt {
+                box-shadow: 3px 3px 5px rgba($black-1, 0.3), -3px -3px 5px rgba($white, 0.95);
+                h2 {
+                    font-weight: 500;
+                    color: $color-3;
+                    box-shadow: inset 3px 3px 5px rgba($black-1, 0.3), inset -3px -3px 5px rgba($white, 0.95);
+                }
+                p {
+                    font-weight: 500;
+                    color: $black-2;
+                }
+            }
+        }
+    }
+}

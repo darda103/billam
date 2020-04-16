@@ -1,0 +1,10 @@
+.portfolio {
+    &.inner {
+        background: linear-gradient($black-3, $black-2);
+    }
+    &.portfolio-2 {
+        &.inner {
+            background: linear-gradient($sky-2, $sky-1);
+        }
+    }
+}

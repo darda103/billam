@@ -1,0 +1,138 @@
+.testimonial {
+    padding: 120px 0;
+    background: $black-3;
+    .comment-area {
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px rgba($black-1, 0.9), -3px -3px 10px rgba($white, 0.1);
+        .comments {
+            padding: 40px 30px;
+            border-radius: 5px;
+            box-shadow: inset 3px 3px 10px rgba($black-1, 0.9), inset -3px -3px 10px rgba($white, 0.1);
+            .single-comment {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .part-img {
+                    width: 100px;
+                    padding: 5px;
+                    border-radius: 50%;
+                    box-shadow: 3px 3px 5px rgba($black-1, 0.9), -3px -3px 5px rgba($white, 0.1);
+                    overflow: hidden;
+                    margin-bottom: 30px;
+                    img {
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .part-txt {
+                    text-align: center;
+                    h3 {
+                        font-size: 22px;
+                        line-height: 100%;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                        color: $color-1;
+                        margin-bottom: 15px;
+                    }
+                    h6 {
+                        font-size: 15px;
+                        line-height: 100%;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                        color: rgba($white, 0.7);
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 26px;
+                        font-weight: 300;
+                        color: rgba($white, 0.7);
+                        margin-bottom: -7px;
+                    }
+                }
+            }
+            .owl-nav {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                visibility: hidden;
+                .owl-prev {
+                    text-align: center;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    outline: none;
+                    border-radius: 5px;
+                    box-shadow: 2px 2px 5px rgba($black-1, 0.9), -2px -2px 5px rgba($white, 0.1);
+                    color: rgba($white, 0.5);
+                    margin-left: -100px;
+                    visibility: visible;
+                    transition: 0.4s;
+                    &:hover {
+                        color: $color-1;
+                    }
+                }
+                .owl-next {
+                    text-align: center;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    outline: none;
+                    border-radius: 5px;
+                    box-shadow: 2px 2px 5px rgba($black-1, 0.9), -2px -2px 5px rgba($white, 0.1);
+                    color: rgba($white, 0.5);
+                    margin-right: -100px;
+                    visibility: visible;
+                    transition: 0.4s;
+                    &:hover {
+                        color: $color-1;
+                    }
+                }
+            }
+        }
+    }
+    /* testimonial for home page two(2) */
+    &.testimonial-2 {
+        background: $sky-2;
+        .comment-area {
+            box-shadow: 3px 3px 5px rgba($black-1, 0.3), -3px -3px 5px rgba($white, 0.95);
+            .comments {
+                box-shadow: inset 3px 3px 5px rgba($black-1, 0.3), inset -3px -3px 5px rgba($white, 0.95);
+                .single-comment {
+                    .part-img {
+                        box-shadow: 3px 3px 5px rgba($black-1, 0.3), -3px -3px 5px rgba($white, 0.95);
+                    }
+                    .part-txt {
+                        h3 {
+                            font-weight: 600;
+                            color: $color-3;
+                        }
+                        h6 {
+                            color: rgba($black-1, 0.6);
+                            font-weight: 400;
+                        }
+                        p {
+                            font-weight: 400;
+                            color: rgba($black-1, 0.7);
+                        }
+                    }
+                }
+                .owl-nav {
+                    .owl-prev, .owl-next {
+                        color: $black-2;
+                        box-shadow: 3px 3px 5px rgba($black-1, 0.3), -3px -3px 5px rgba($white, 0.95);
+                        &:hover {
+                            color: $color-3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

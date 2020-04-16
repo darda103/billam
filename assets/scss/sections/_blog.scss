@@ -1,0 +1,84 @@
+.blog {
+    padding: 120px 0;
+    background: $black-3;
+    .single-blog {
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px rgba($black-1, 0.9),-3px -3px 10px rgba($white, 0.1);
+        .part-img {
+            border-radius: 5px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                transition: all 0.6s ease-in;
+            }
+        }
+        .part-txt {
+            padding: 30px 20px;
+            border-radius: 5px;
+            box-shadow: inset 3px 3px 10px rgba($black-1, 0.9), inset -3px -3px 10px rgba($white, 0.1);
+            a {
+                font-family: $heading;
+                font-size: 22px;
+                line-height: 32px;
+                font-weight: 500;
+                text-transform: capitalize;
+                color: $color-2;
+                margin-top: -7px;
+                margin-bottom: 26px;
+                &:hover {
+                    color: $color-1;
+                }
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                li {
+                    list-style: none;
+                    color: rgba($white, 0.6);
+                    font-size: 16px;
+                    line-height: 100%;
+                    font-weight: 300;
+                    text-transform: capitalize;
+                    padding-left: 10px;
+                    border-left: 1px solid rgba($white, 0.3);
+                }
+            }
+        }
+        &:hover {
+            .part-img {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    /* blog for home page two(2) */
+    &.blog-2 {
+        background: $sky-2;
+        .single-blog {
+            box-shadow: 3px 3px 5px rgba($black-1, 0.3),-3px -3px 5px rgba($white, 0.99);
+            .part-txt {
+                box-shadow: inset 3px 3px 5px rgba($black-1, 0.3), inset -3px -3px 5px rgba($white, 0.99);
+                a {
+                    font-weight: 600;
+                    color: $color-3;
+                    &:hover {
+                        color: rgba($color-3, 0.8);
+                    }
+                }
+                ul {
+                    li {
+                        color: rgba($black-1, 0.7);
+                        font-weight: 400;
+                        border-color: $black-2;
+                    }
+                }
+            }
+        }
+    }
+}

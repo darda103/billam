@@ -1,0 +1,41 @@
+.error {
+    padding: 120px 0;
+    background: linear-gradient($black-3, $black-2);
+    .box {
+        text-align: center;
+        h2 {
+            font-size: 250px;
+            line-height: 100%;
+            font-weight: 700;
+            color: $black-3;
+            text-shadow: 3px 3px 5px rgba($black-1, 0.9), -3px -3px 5px rgba($white, 0.1);
+            margin-top: -18px;
+            margin-bottom: 0px;
+        }
+        p {
+            font-family: $heading;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: rgba($white, 0.7);
+            margin-bottom: 0;
+        }
+        .def-btn {
+            margin-top: 50px;
+        }
+    }
+    &.error-2 {
+        background: linear-gradient($sky-2, $sky-1);
+        .box {
+            h2 {
+                color: $sky-1;
+                text-shadow: 3px 3px 5px rgba($black-1, 0.3), -3px -3px 5px rgba($white, 0.95);
+            }
+            p {
+                color: $color-3;
+                font-weight: 700;
+            }
+        }
+    }
+}

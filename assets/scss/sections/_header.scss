@@ -1,0 +1,146 @@
+.header {
+    background: $black-2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    box-shadow: inset 0px -5px 15px rgba($black-1, 0.9);
+    z-index: 11;
+    &.fixed-header {
+        position: fixed;
+        border-radius: 0;
+        box-shadow: 0px 2px 5px rgba($black-1, 0.9);
+        .navbar {
+            .navbar-nav {
+                .nav-item {
+                    padding: 20px 15px;
+                }
+            }
+        }
+    }
+    .logo {
+        img {
+            width: 110px;
+        }
+    }
+    .navbar {
+        padding: 0;
+        .navbar-nav {
+            .nav-item {
+                padding: 30px 15px;
+                .nav-link {
+                    padding: 5px 0;
+                    font-size: 15px;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    color: rgba($white, 0.7);
+                    position: relative;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 2px;
+                        background: $color-1;
+                        transition: all 0.4s ease-in;
+                    }
+                    &:hover {
+                        &:after {
+                            width: 100%;
+                        }
+                    }
+                }
+                &.dropdown {
+                    .dropdown-menu {
+                        display: block;
+                        opacity: 0;
+                        visibility: hidden;
+                        margin-top: 50px;
+                        transition: all 0.4s ease-in;
+                        background: $black-2;
+                        border: 0;
+                        padding: 10px 15px 10px 30px;
+                        border-radius: 5px;
+                        box-shadow: 3px 3px 5px rgba($black-1, 0.9), -3px -3px 5px rgba($white, 0.1);
+                        overflow: hidden;
+                        .dropdown-item {
+                            padding: 10px 0;
+                            padding-right: 15px;
+                            font-size: 15px;
+                            font-weight: 300;
+                            text-transform: capitalize;
+                            color: rgba($white, 0.5);
+                            position: relative;
+                            transition: all 0.4s ease-in;
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 0;
+                                width: 10px;
+                                height: 10px;
+                                background: $color-2;
+                                border-radius: 50%;
+                                opacity: 0;
+                                transition: all 0.4s ease-in;
+                            }
+                            &:focus {
+                                background: transparent;
+                            }
+                            &:hover {
+                                background: transparent;
+                                color: $color-2;
+                                padding-left: 15px;
+                                padding-right: 0;
+                                &:after {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        .dropdown-menu {
+                            opacity: 1;
+                            visibility: visible;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*header for home page two(2)*/
+    &.header-2 {
+        background: $sky-1;
+        box-shadow: 0px -5px 15px rgba($black-1, 0.9);
+        .navbar {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: $black-2;
+                        font-weight: 400;
+                        &:after {
+                            background: $color-3;
+                        }
+                    }
+                    &.dropdown {
+                        .dropdown-menu {
+                            background: $sky-1;
+                            box-shadow: 3px 3px 5px rgba($black-1, 0.3), -3px -3px 5px rgba($white, 0.95);
+                            .dropdown-item {
+                                color: $black-2;
+                                font-weight: 400;
+                                &:after {
+                                    background: $color-3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
